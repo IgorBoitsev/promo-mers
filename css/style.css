@@ -340,7 +340,7 @@ button {
 }
 
 section {
-  padding: 30px 0;
+  padding: 60px 0px 0px 0px;
 }
 
 .container {
@@ -365,6 +365,10 @@ a {
 
 .hidden {
   display: none !important;
+}
+
+.is_open {
+  height: 88px !important;
 }
 
 .button {
@@ -411,6 +415,7 @@ a {
 /* header */
 .header {
   margin-bottom: 114px;
+  transition: all 0.5s ease-out;
 }
 
 .header-wrapper {
@@ -660,15 +665,16 @@ a {
   background-position: right;
   outline: none;
   background-size: 30px;
+  margin-bottom: 14px;
 }
 
 .feature__link_active {
-  margin-bottom: 14px;
   background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In .SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='451.847px' height='451.847px' viewBox='0 0 451.847 451.847' style='enable-background:new 0 0 451.847 451.847;' xml:space='preserve'%3E%3Cg%3E%3Cpath d='M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z'/%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
 .feature__item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .feature-item-wrap {
@@ -686,6 +692,11 @@ a {
 .feature-item__title {
   font-size: 24px;
   line-height: 1.6;
+}
+
+.feature-sub {
+  height: 0px;
+  transition: all 0.5s ease-out;
 }
 
 .feature-sub__item {
@@ -740,11 +751,12 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
+  transition: add 0.5s ease-out;
 }
 
 .modal-wrapper {
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 50%;
   z-index: 9;
   max-width: 592px;
@@ -756,6 +768,19 @@ a {
   background-color: #080808;
   padding: 71px 57px;
   border: 1px solid #ffffff;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+.shifted-top {
+  top: -45%;
+  opacity: 0;
+}
+
+.shifted-left {
+  left: -100%;
+  right: 100%;
+  opacity: 0;
 }
 
 .modal__title {
@@ -819,6 +844,22 @@ a {
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+
+.progress-bar-wrapper {
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all 0.5s ease-out;
 }
 
 @media (max-width: 1720px) {

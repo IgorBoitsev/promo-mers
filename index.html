@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon">
 	<script src="./js/main.js" type="module" defer></script>
 </head>
 
@@ -94,20 +95,20 @@
 					<img src="img/car/image-4.png" alt="A 200" class="feature__img design-block__img hidden"
 						data-tabs-field="body">
 					<div class="design-text">
-						<h2 class="section__title design__title">
+						<h2 class="section__title design__title" data-tabs-field="interior">
 							Комфорт в деталях
 						</h2>
-						<h2 class="section__title design__title hidden">
+						<h2 class="section__title design__title hidden" data-tabs-field="body">
 							Притягивает взгляды
 						</h2>
 						<ul class="design-list">
 							<li>
 								<button type="button" class="design-list__item design-list__item_active"
-									data-tabs-handler="interior" data-some-attr="attr">Дизайн салона</button>
+									data-tabs-handler="interior">Дизайн салона</button>
 							</li>
 							<li>
-								<button type="button" class="design-list__item" data-tabs-handler="body">Дизайн
-									кузова</button>
+								<button type="button" class="design-list__item" 
+									data-tabs-handler="body">Дизайн кузова</button>
 							</li>
 						</ul>
 						<!-- /.design-list -->
@@ -177,7 +178,7 @@
 								</div>
 							</button>
 							<!-- /.feature__link -->
-							<ul class="feature-sub">
+							<ul class="feature-sub is_open">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Привод автомобиля
@@ -213,7 +214,7 @@
 									</span>
 								</div>
 							</button>
-							<ul class="feature-sub hidden">
+							<ul class="feature-sub">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Двигатель
@@ -248,7 +249,7 @@
 									</span>
 								</div>
 							</button>
-							<ul class="feature-sub hidden">
+							<ul class="feature-sub">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Система экстренного торможения
@@ -291,7 +292,7 @@
 									</span>
 								</div>
 							</button>
-							<ul class="feature-sub hidden">
+							<ul class="feature-sub">
 								<li class="feature-sub__item">
 									<span class="feature-sub__name">
 										Климат-контроль
@@ -370,9 +371,9 @@
 		</div>
 	</section>
 
-	<div class="modal hidden">
+	<div class="modal shifted-left">
 		<div class="overlay"></div>
-		<div class="modal-wrapper">
+		<div class="modal-wrapper shifted-top">
 			<h2 class="section__title modal__title">
 				Подробное описание
 				комплектаций
@@ -396,6 +397,11 @@
 			<!-- /.form modal__form -->
 		</div>
 	</div>
+
+	<div class="progress-bar-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+	<!-- /.progress-bar-wrapper -->
 
 </body>
 
