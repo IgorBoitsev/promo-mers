@@ -5,6 +5,7 @@ import { tabs } from "./tabs.js";
 import { progressBar } from "./progressBar.js";
 import { openModal } from "./openModal.js";
 import { mobileMenu } from "./mobileMenu.js";
+import { sendForm } from "./sendForm.js";
 
 accordionOpen();
 smoothScroll();
@@ -13,3 +14,4 @@ tabs();
 progressBar();
 openModal();
 mobileMenu();
+sendForm();
